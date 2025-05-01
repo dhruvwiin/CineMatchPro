@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+scipy
+requests
+streamlit
+matplotlib
+Pillow
+faiss-cpu
+google-generativeai
