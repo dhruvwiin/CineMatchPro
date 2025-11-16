@@ -1,0 +1,35 @@
+[run]
+# Coverage.py configuration for CineMatchPro
+source = .
+omit =
+    */tests/*
+    */test_*.py
+    */__pycache__/*
+    */site-packages/*
+    */venv/*
+    */env/*
+    .venv/*
+    setup.py
+    */conftest.py
+
+[report]
+# Reporting options
+precision = 2
+show_missing = True
+skip_covered = False
+
+# Exclude lines from coverage
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+    @abstract
+    @abstractmethod
+
+[html]
+# HTML report options
+directory = htmlcov
+title = CineMatchPro Test Coverage Report
